@@ -1,0 +1,94 @@
+@media (min-width: 375px) {
+	.hamburger--active {
+		transform: translatex(26rem);
+	}
+	.hamburger__box {
+		width: 45px;
+		height: 35px;
+		display: inline-block;
+		position: relative;
+	}
+
+	.navigation {
+		&__list {
+			&-item {
+				margin: 1rem;
+				padding: 15px 30px;
+				font-size: 1.8rem;
+				text-decoration: none;
+				color: #e0dfd5;
+				font-weight: 600;
+			}
+		}
+	}
+	.contact__box {
+		right: 35px;
+	}
+
+	.aboudus {
+		&__box {
+			font-size: 1.5rem;
+		}
+	}
+	.track {
+		&__box {
+			&-text {
+				&-tittle {
+					font-size: 1.6rem;
+				}
+				&-info {
+					font-size: 1.5;
+				}
+			}
+		}
+	}
+	.arrangements {
+		&__boxs {
+			&-box {
+				height: 35rem;
+				&-icon {
+					right: -20px;
+					font-size: 4rem;
+				}
+				&-card {
+					&-info {
+						font-size: 1.5rem;
+					}
+					&-list {
+						font-size: 1.4rem;
+					}
+				}
+			}
+			&-box--two {
+				height: 60rem;
+			}
+			&-box--three {
+				height: 25rem;
+			}
+		}
+	}
+	.show-card {
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	.hidden {
+		opacity: 0;
+		transform: scale(0);
+	}
+	.service {
+		&__serv {
+			position: relative;
+		}
+	}
+}
+
+@media (min-width: 390px) {
+	.aboudus {
+		&__box2 {
+			&-tittle {
+				font-size: 1.7rem;
+			}
+		}
+	}
+}
