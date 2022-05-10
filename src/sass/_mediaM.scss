@@ -555,6 +555,9 @@
 }
 
 @media (min-width: 800px) {
+	.hamburger--active {
+		transform: translatex(47em);
+	}
 	.accessories {
 		padding: 5p;
 		display: flex;
