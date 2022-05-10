@@ -230,20 +230,10 @@ body {
 		z-index: 99;
 	}
 
-	.logo {
-		position: absolute;
-		z-index: 1;
-		left: 0.5em;
-		top: 1em;
-		font-size: 4rem;
-		transform: translateY(-50%);
-
-		.fa-bowling-ball {
-			color: #f5f0f0;
-			padding: 0.5em;
-		}
-		.fa-bowling-ball:hover {
-			color: #333;
+	.mobile-logo {
+		margin-bottom: 0;
+		img {
+			width: 100%;
 		}
 	}
 }
@@ -781,7 +771,7 @@ body {
 			border-radius: 15px;
 			border: none;
 			cursor: pointer;
-			color: #ef271b;
+			color: #eadeda;
 			font-weight: bold;
 		}
 	}

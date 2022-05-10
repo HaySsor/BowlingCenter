@@ -57,7 +57,7 @@
 		// background-color: rgb(180, 22, 22);
 		&-item {
 			margin: 0.5rem;
-			font-size: 1.6rem;
+			font-size: 1.2rem;
 			padding: 1.5rem 1.25rem;
 			text-decoration: none;
 			color: #ffffff;
@@ -72,8 +72,11 @@
 		}
 	}
 	.logo {
-		font-size: 4rem;
-		margin-right: 5rem;
+		font-size: 2rem;
+		margin-right: 0rem;
+		img {
+			width: 15rem;
+		}
 
 		.fa-bowling-ball {
 			color: #f5f0f0;
@@ -219,8 +222,10 @@
 
 @media (min-width: 1200px) {
 	.nav__desktop {
-		justify-content: flex-end;
 		z-index: 999;
+		&-item {
+			font-size: 1.5rem;
+		}
 	}
 
 	.show-bgc {
@@ -228,7 +233,10 @@
 	}
 
 	.logo {
-		left: 1.2em;
+		margin-right: 1rem;
+		img {
+			width: 15rem;
+		}
 	}
 	.section-title {
 		padding-top: 7rem;

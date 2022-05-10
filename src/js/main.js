@@ -5,13 +5,8 @@ const navid = document.getElementById("nav");
 const phone = document.getElementById("phone");
 const icon = document.getElementById("icon");
 const navDesktop = document.querySelectorAll(".nav__desktop .item");
-
-const cardBox = document.querySelectorAll(".arrangements__boxs-box");
-
 const quesIcon = document.querySelectorAll(".fa-question-circle");
-
 const allIcon = document.querySelectorAll(".icon");
-
 const planningBtn = document.querySelector(".icon1");
 const planningPhoto = document.querySelector(
 	".planning__box-planning-info-photo"
@@ -22,29 +17,26 @@ const finansePhoto = document.querySelector(
 );
 const lanesBtn = document.querySelector(".icon2");
 const lanesPhoto = document.querySelector(".planning__box-lanes-info-photo");
-
 const arrangementsBtn = document.querySelector(".icon4");
 const arrangementsPhoto = document.querySelector(
 	".planning__box-arrangements-info-photo"
 );
-
 const equipmentBtn = document.querySelector(".icon5");
 const equipmentPhoto = document.querySelector(
 	".planning__box-equipment-info-photo"
 );
-
 const allPhoto = document.querySelectorAll(".galleryPhoto__box-item");
-
 const galleryBtn = document.querySelector(".galleryPhoto__btn-box-button");
-
 const firstPhoto = document.querySelector(".first");
-
 const service = document.querySelector(".service");
 const serviceCardOne = document.querySelector(".service__news-card-one");
 const serviceCardTwo = document.querySelector(".service__news-card-two");
 const footerYear = document.querySelector(".footer__year");
-
 const section = document.querySelectorAll("section");
+const sliderBox = document.querySelector(".accessories__img-box");
+const leftBtn = document.querySelector(".accessories__img-button--left");
+const rightBtn = document.querySelector(".accessories__img-button--right");
+const carouselImg = document.querySelectorAll(".accessories__img-box-slider");
 
 // Navigarion List
 const burgerMenu = () => {
@@ -216,11 +208,6 @@ arrangementsBtn.addEventListener("click", arrangementsToggle);
 finanseBtn.addEventListener("click", finanseToggle);
 equipmentBtn.addEventListener("click", equipmentToggle);
 galleryBtn.addEventListener("click", galleryShow);
-
-const sliderBox = document.querySelector(".accessories__img-box");
-const leftBtn = document.querySelector(".accessories__img-button--left");
-const rightBtn = document.querySelector(".accessories__img-button--right");
-const carouselImg = document.querySelectorAll(".accessories__img-box-slider");
 
 const carouselWidth = 800;
 const carouselSpeed = 3500;
