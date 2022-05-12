@@ -128,7 +128,7 @@
 				}
 			}
 			&-card2 {
-				&-img2{
+				&-img2 {
 					height: 5rem;
 					width: 15rem;
 				}
@@ -252,12 +252,11 @@
 			&-tittle {
 				font-size: 2rem;
 			}
-			&-card2-img2{
+			&-card2-img2 {
 				height: 5rem;
 				width: 15rem;
 			}
 		}
-		
 
 		&__cardbox {
 			&-card {
@@ -640,7 +639,7 @@
 					&-photo {
 						opacity: 0;
 						position: absolute;
-						width: 100% ;
+						width: 100%;
 						height: 20rem;
 						z-index: -1;
 						top: 0;
