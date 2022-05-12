@@ -128,8 +128,9 @@
 				}
 			}
 			&-card2 {
-				&-img2 {
-					height: 7em;
+				&-img2{
+					height: 5rem;
+					width: 15rem;
 				}
 			}
 		}
@@ -251,7 +252,12 @@
 			&-tittle {
 				font-size: 2rem;
 			}
+			&-card2-img2{
+				height: 5rem;
+				width: 15rem;
+			}
 		}
+		
 
 		&__cardbox {
 			&-card {
@@ -634,8 +640,8 @@
 					&-photo {
 						opacity: 0;
 						position: absolute;
-						width: 100%;
-						height: 35rem;
+						width: 100% ;
+						height: 20rem;
 						z-index: -1;
 						top: 0;
 						left: 0;
@@ -730,7 +736,7 @@
 	}
 	.show-photo4 {
 		opacity: 1;
-		transform: translateX(380px) scale(1);
+		transform: translateX(380px) translateY(20rem) scale(1);
 	}
 	.show-photo5 {
 		opacity: 1;
@@ -788,6 +794,7 @@
 		}
 	}
 	.service {
+		margin-top: 0rem;
 		font-size: 1.4rem;
 		&__serv,
 		&__moder {
