@@ -27,17 +27,17 @@ body {
 
 .contact__box {
 	position: fixed;
-	bottom: 30px;
-	right: 10px;
-	background-color: #007ea7;
-	border-radius: 40px;
-	text-align: center;
-	padding: 1em;
-	height: 30em;
-	width: 30em;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	bottom: 30px;
+	right: 10px;
+	padding: 1em;
+	height: 30em;
+	width: 30em;
+	background-color: #007ea7;
+	border-radius: 40px;
+	text-align: center;
 	transition: transform 0.4s;
 	transform: translate(130%, 130%) scale(0);
 	z-index: 110;
@@ -50,34 +50,34 @@ body {
 	}
 
 	&-phone {
-		font-size: 1.5rem;
 		margin-bottom: 3em;
+		font-size: 1.5rem;
 		font-weight: bold;
 		a {
+			padding: 1.75em;
 			text-decoration: none;
 			color: #e8e9eb;
-			padding: 1.75em;
 			cursor: pointer;
 		}
 		i {
-			color: #e8e9eb;
 			margin-right: -1.5em;
+			color: #e8e9eb;
 		}
 	}
 	&-email {
-		font-size: 1.5rem;
 		margin-bottom: 1.2em;
+		font-size: 1.5rem;
 		font-weight: bold;
 
 		a {
+			padding: 1em;
 			text-decoration: none;
 			color: #e8e9eb;
-			padding: 1em;
 			cursor: pointer;
 		}
 		i {
-			color: #e8e9eb;
 			margin-right: -1em;
+			color: #e8e9eb;
 		}
 	}
 }
@@ -90,13 +90,15 @@ body {
 	right: 15px;
 	z-index: 115;
 	i {
-		// position: relative;
+
+		padding: 0.5rem;
 		font-size: 6rem;
 		color: #ef271b;
 		z-index: 11;
-		padding: 0.5rem;
 	}
 }
+
+
 // Nav Burger mobile
 @mixin hamburger-line {
 	width: 100%;
@@ -121,20 +123,20 @@ body {
 }
 
 .hamburger {
-	padding: 2em;
+	position: fixed;
 	display: inline-block;
-	cursor: pointer;
+	margin: 0;
+	padding: 2em;
 	background-color: transparent;
 	border: 0;
-	margin: 0;
 	z-index: 120;
-	position: fixed;
+	cursor: pointer;
 	// transition:translateY 0.3s;
 	&__box {
-		width: 35px;
-		height: 24px;
 		display: inline-block;
 		position: relative;
+		width: 35px;
+		height: 24px;
 		z-index: -5;
 
 		&-inner {
@@ -287,14 +289,17 @@ body {
 		transform: translate(-50%);
 	}
 }
+.desktop-photo{
+	display: none;
+}
 
 // main
 .section-title {
+	margin-bottom: 1em;
 	padding-top: 3rem;
 	text-align: center;
 	font-size: 3rem;
 	color: #262322;
-	margin-bottom: 1em;
 }
 // O nas
 .aboudus {
@@ -444,7 +449,7 @@ body {
 				padding: 0 1rem;
 				color: #e0dfd5;
 				a {
-					color: #ef271b;
+					color: #620a20;
 				}
 			}
 			&-link {
