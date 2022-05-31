@@ -230,76 +230,13 @@
 		}
 	}
 	.arrangements {
-		&__boxs {
-			flex-direction: row;
-			justify-content: center;
-			flex-wrap: wrap;
-
+		&__accordion {
 			&-box {
-				height: 30rem;
-				border-radius: 40px;
-
-				&-icon {
-					position: absolute;
-					top: -5px;
-					right: -5px;
-					// padding: 2rem;
-					font-size: 3rem;
-					// color: rgb(214, 22, 64);
-					padding: 2rem;
-					z-index: 100;
+				&-info {
+					font-size: 1.5rem;
 				}
-
-				&-title {
-					opacity: 1;
-					// color: rgb(214, 22, 64);
-					transition: opacity 0.5s, transform 0.5s;
-					font-size: 2rem;
-				}
-				&-card {
-					position: absolute;
-					top: 0;
-					bottom: 0;
-					left: 0;
-					right: 0;
-					padding: 1em;
-					transition: opacity 0.5s, transform 0.5s;
-					display: flex;
-					align-items: center;
-					flex-direction: column;
-					justify-content: center;
-					transform: scale(0);
-					text-align: left;
-
-					&-info {
-						font-size: 1.6rem;
-						margin-bottom: 0.7rem;
-					}
-					&-list {
-						padding: 2rem;
-						font-size: 1.5rem;
-						text-align: left;
-						// list-style: none;
-					}
-				}
-			}
-			&-box--two {
-				height: 40rem;
-			}
-			&-box--three {
-				height: 25rem;
 			}
 		}
-	}
-	.show-card {
-		opacity: 1;
-		transform: scale(1);
-		border-radius: 15px;
-	}
-
-	.hidden {
-		opacity: 0;
-		transform: scale(0);
 	}
 
 	.planning {
@@ -416,10 +353,12 @@
 	}
 	.service {
 		font-size: 1.6rem;
+
 		&__serv,
 		&__moder {
 			display: flex;
 			justify-content: space-around;
+			flex-direction: column;
 			align-items: center;
 			width: 100%;
 			height: 100%;
@@ -427,7 +366,7 @@
 				position: relative;
 				font-size: 1.6rem;
 				text-align: center;
-				width: 45%;
+				width: 100%;
 				height: 100%;
 				&-tel,
 				&-email {
@@ -446,28 +385,33 @@
 					display: block;
 				}
 				.ball-top {
-					top: -12rem;
-					left: 4rem;
-					animation: rotateleft 15s infinite;
+					display: none;
 				}
 				.ball-bottom {
-					bottom: -12rem;
-					right: 4rem;
-					animation: rotateright 15s infinite;
+					display: none;
 				}
 			}
 
 			&-info {
-				width: 45%;
+				text-align: center;
+				width: 100%;
 				&-list {
+					text-align: center;
 					margin-left: 2rem;
 					list-style: square;
+					display: flex;
+					justify-content: center;
+					flex-direction: column;
+					align-items: center;
+					li {
+						text-align: left;
+					}
 				}
 			}
 		}
 		&__news-boxs {
 			margin: 2rem 0;
-			margin-top: 5rem;
+			margin-top: 10rem;
 			&-title {
 				text-align: center;
 			}
@@ -516,7 +460,7 @@
 		}
 	}
 	.contact {
-		padding: 1rem;
+		padding: 2rem;
 		font-size: 1.3rem;
 		&__boxs {
 			display: flex;
@@ -530,13 +474,11 @@
 				&-info {
 					margin: 0.5rem;
 					&-span {
-						font-style: italic;
 						font-weight: bold;
 						margin-right: 0.5rem;
 					}
 					&-NIP {
 						margin-left: 0.5rem;
-						font-weight: bold;
 					}
 					a {
 						text-decoration: none;
@@ -558,7 +500,7 @@
 		transform: translatex(47em);
 	}
 	.accessories {
-		padding: 5p;
+		padding: 5px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -567,7 +509,8 @@
 
 		&__info {
 			&-text {
-				font-size: 1.3rem;
+				padding: 1.5rem;
+				font-size: 1.5rem;
 
 				&-contakt {
 					font-size: 1.5rem;
@@ -625,31 +568,5 @@
 		&__img-mobile {
 			display: none;
 		}
-	}
-}
-
-@keyframes rotateleft {
-	0% {
-		transform: translateX(0) rotate(0);
-	}
-
-	50% {
-		transform: translateX(28rem) rotate(1000deg);
-	}
-
-	100% {
-		transform: translateX(0) rotate(0);
-	}
-}
-@keyframes rotateright {
-	0% {
-		transform: translateX(0) rotate(0);
-	}
-
-	50% {
-		transform: translateX(-28rem) rotate(-1000deg);
-	}
-	100% {
-		transform: translateX(0) rotate(0);
 	}
 }

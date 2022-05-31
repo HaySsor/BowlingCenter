@@ -272,7 +272,7 @@
 
 	.aboudus {
 		&__box {
-			font-size: 1.3rem;
+			font-size: 2.3rem;
 		}
 		&__box2 {
 			&-tittle {
@@ -490,7 +490,7 @@
 			height: 140rem;
 			position: relative;
 			&-text {
-				font-size: 1.4rem;
+				font-size: 2.1rem;
 			}
 
 			&-middle {
@@ -599,7 +599,7 @@
 				position: absolute;
 				top: 50rem;
 				right: -5rem;
-				height: 32rem;
+				height: 25rem;
 				width: 30%;
 				overflow: visible;
 				opacity: 0;
@@ -825,13 +825,19 @@
 		}
 	}
 	.service {
-		margin-top: 0rem;
+		margin-top: -2rem;
 		font-size: 1.4rem;
 		&__serv,
 		&__moder {
 			&-contacts {
 				.fa-bowling-ball {
 					font-size: 5rem;
+				}
+				.ball-top {
+					display: block;
+					top: 9rem;
+					left: 4rem;
+					animation: rotateleft 25s infinite;
 				}
 			}
 		}
@@ -855,7 +861,6 @@
 		left: 3em;
 	}
 
-
 	// main
 	.section-title {
 		padding-top: 8rem;
@@ -864,7 +869,7 @@
 	}
 	.aboudus {
 		&__box {
-			font-size: 1.5rem;
+			font-size: 2.5rem;
 		}
 		&__box2 {
 			&-tittle {
@@ -914,26 +919,13 @@
 	}
 
 	50% {
-		transform: translateX(28rem) rotate(1000deg);
+		transform: translateX(1100px) rotate(1200deg);
 	}
 
 	100% {
 		transform: translateX(0) rotate(0);
 	}
 }
-@keyframes rotateright {
-	0% {
-		transform: translateX(0) rotate(0);
-	}
-
-	50% {
-		transform: translateX(-28rem) rotate(-1000deg);
-	}
-	100% {
-		transform: translateX(0) rotate(0);
-	}
-}
-
 @keyframes show {
 	from {
 		opacity: 0;

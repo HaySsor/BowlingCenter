@@ -27,7 +27,7 @@
 
 	.aboudus {
 		&__box {
-			font-size: 1.5rem;
+			font-size: 1.6rem;
 		}
 	}
 	.track {
@@ -80,12 +80,21 @@
 		&__serv {
 			position: relative;
 		}
+		&__serv,
+		&__moder {
+			&-contacts {
+				font-size: 1.8rem;
+				text-align: center;
+				margin-top: 3rem;
+			}
+		}
 	}
 }
 
 @media (min-width: 390px) {
 	.aboudus {
 		&__box2 {
+			font-size: 1.4rem;
 			&-tittle {
 				font-size: 1.7rem;
 			}

@@ -19,10 +19,10 @@ body {
 	background-color: #f5f0f0;
 	font-family: "Montserrat", sans-serif;
 	min-height: 100vh;
-	background-color: #e8e9eb;
 	/* mobile viewport bug fix */
 	min-height: -webkit-fill-available;
 }
+
 // pływający rzycisk
 
 .contact__box {
@@ -90,14 +90,12 @@ body {
 	right: 15px;
 	z-index: 115;
 	i {
-
 		padding: 0.5rem;
 		font-size: 6rem;
 		color: #ef271b;
 		z-index: 11;
 	}
 }
-
 
 // Nav Burger mobile
 @mixin hamburger-line {
@@ -289,7 +287,7 @@ body {
 		transform: translate(-50%);
 	}
 }
-.desktop-photo{
+.desktop-photo {
 	display: none;
 }
 
@@ -305,7 +303,7 @@ body {
 .aboudus {
 	&__box {
 		padding: 1em;
-		font-size: 1.4rem;
+		font-size: 1.6rem;
 		text-align: center;
 	}
 	&__box2 {
@@ -508,10 +506,14 @@ body {
 				gap: 1em;
 				font-size: 1.5rem;
 				margin: 1rem 0;
+				color: #007ea7;
 				a {
 					text-decoration: none;
 					color: #007ea7;
 					padding: 5px;
+				}
+				a:visited {
+					color: #007ea7;
 				}
 			}
 			.fa-facebook {
@@ -541,83 +543,47 @@ body {
 	}
 }
 .arrangements {
-	padding: 1.5rem;
-	&__boxs {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 1rem;
+	padding: 1rem;
 
+	&__accordion {
+		width: 100%;
+		border-radius: 10px;
+		padding: 0.5rem;
 		&-box {
-			text-align: center;
-			position: relative;
-			width: 100%;
-			height: 35rem;
-			background-color: rgb(224, 224, 224);
-			border-radius: 15px;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			margin-bottom: 2rem;
-			transition: height 0.4s;
-			background: linear-gradient(-45deg, #039acc, #09162e98);
-			box-shadow: 15px 15px 26px #808080, -15px -15px 26px #eadeda;
-
-			&-icon {
-				position: absolute;
-				top: -15px;
-				right: -15px;
-				// padding: 2rem;
-				font-size: 3rem;
-				color: #ef271b;
-				padding: 1.5rem;
-				z-index: 100;
+			margin: 20px;
+			&-btn {
+				background-color: #039acc;
+				color: #fff;
+				padding: 1em;
+				width: 100%;
+				font-size: 20px;
+				text-align: center;
+				border: none;
+				border-radius: 10px;
+				transition: background-color 0.3s;
 				cursor: pointer;
 			}
-
-			&-title {
-				opacity: 1;
+			&-btn:hover,
+			&-btn:focus {
+				background-color: #054b62;
+				color: #fff;
+				outline: none;
+			}
+			.activeAcordeon &-btn {
+				border-bottom-right-radius: 0px;
+				border-bottom-left-radius: 0px;
+			}
+			&-info {
+				display: none;
+				padding: 2rem;
+				font-size: 1.4rem;
 				color: #e8e9eb;
-				transition: opacity 0.5s, transform 0.5s;
-				font-size: 2rem;
-				font-weight: bold;
-			}
-			&-card {
-				position: absolute;
-				top: 0;
-				bottom: 0;
-				left: 0;
-				right: 0;
-				padding: 1em;
-				transition: opacity 0.5s, transform 0.5s;
-				display: flex;
-				align-items: center;
-				flex-direction: column;
-				justify-content: center;
-				transform: scale(0);
-				text-align: left;
-
-				&-info {
-					font-size: 1.4rem;
-					margin-bottom: 0.7rem;
+				background-color: #039acc;
+				border-radius: 15px;
+				&-text {
 					text-align: center;
-					color: #e8e9eb;
-				}
-				&-list {
-					padding: 2rem;
-					font-size: 1.3rem;
-					text-align: left;
-					color: #e8e9eb;
-					// list-style: none;
 				}
 			}
-		}
-		&-box--two {
-			height: 60rem;
-		}
-		&-box--three {
-			height: 25rem;
 		}
 	}
 }
@@ -783,6 +749,9 @@ body {
 
 	&__box {
 		position: relative;
+		.first{
+			z-index: 1;
+		}
 
 		&-item {
 			position: absolute;
@@ -806,8 +775,9 @@ body {
 	&__serv,
 	&__moder {
 		&-contacts {
-			font-size: 1.3rem;
+			font-size: 1.5rem;
 			text-align: center;
+			margin-top: 3rem;
 			&-tel,
 			&-email {
 				margin-bottom: 3rem;
@@ -818,6 +788,9 @@ body {
 					color: #007ea7;
 					padding: 15px 5px;
 				}
+				a:visited {
+					color: #007ea7;
+				}
 			}
 			.fa-bowling-ball {
 				display: none;
@@ -825,6 +798,12 @@ body {
 		}
 
 		&-info {
+			&-tittle {
+				text-align: center;
+				font-weight: bold;
+				font-size: 2rem;
+				margin-bottom: 2rem;
+			}
 			&-list {
 				margin-left: 2rem;
 				list-style: square;
@@ -837,6 +816,8 @@ body {
 		margin-top: 3rem;
 		&-title {
 			text-align: center;
+			font-size: 2rem;
+			margin-bottom: 2rem;
 		}
 		&-info {
 			margin-top: 0.5rem;
@@ -865,9 +846,15 @@ body {
 			&-title {
 				margin-bottom: 1rem;
 				font-weight: bold;
+				position: relative;
 				i {
 					font-size: 3rem;
 					color: black;
+				}
+				.fa-thumbs-down {
+					position: absolute;
+					top: 2px;
+					right: -35px;
 				}
 			}
 			&-info {
@@ -904,19 +891,20 @@ body {
 			&-info {
 				margin: 0.5rem;
 				&-span {
-					font-style: italic;
 					font-weight: bold;
 					margin-right: 0.5rem;
 				}
 				&-NIP {
 					margin-left: 0.5rem;
-					font-weight: bold;
 				}
 				a {
 					text-decoration: none;
 					font-weight: bold;
 					color: #007ea7;
 					margin-right: 0.5rem;
+				}
+				a:visited {
+					color: #007ea7;
 				}
 				&--number {
 					align-self: flex-start;
@@ -974,4 +962,11 @@ body {
 
 .highlighted {
 	font-weight: bold;
+}
+.positon {
+	font-weight: bold;
+}
+
+.activeAcordeon {
+	display: block;
 }

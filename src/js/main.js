@@ -38,6 +38,10 @@ const leftBtn = document.querySelector(".accessories__img-button--left");
 const rightBtn = document.querySelector(".accessories__img-button--right");
 const carouselImg = document.querySelectorAll(".accessories__img-box-slider");
 
+const accordion = document.querySelector(".arrangements__accordion");
+const accordionBtn = document.querySelectorAll(
+	".arrangements__accordion-box-btn"
+);
 // Navigarion List
 const burgerMenu = () => {
 	burger.classList.toggle("hamburger--active");
@@ -77,21 +81,6 @@ const togglePhonebox = () => {
 	phone.classList.toggle("show");
 };
 
-const showCard = () => {
-	quesIcon.forEach(item => {
-		item.addEventListener("click", e => {
-			const title = e.target.previousElementSibling;
-			const card = e.target.nextElementSibling;
-			console.log(e.target);
-
-			if (e.target.matches(".fa-question-circle")) {
-				title.classList.toggle("hidden");
-				card.classList.toggle("show-card");
-			}
-		});
-	});
-};
-
 const showPlaningPhoto = () => {
 	allIcon.forEach(item => {
 		item.addEventListener("click", e => {
@@ -102,7 +91,6 @@ const showPlaningPhoto = () => {
 	});
 };
 
-showCard();
 showPlaningPhoto();
 
 const planningToggle = () => {
@@ -135,7 +123,7 @@ function galleryShow() {
 }
 
 function ServiceShowCard() {
-	if (window.scrollY >= 13698) {
+	if (window.scrollY >= 13360) {
 		serviceCardOne.classList.add("show-service-card");
 		serviceCardTwo.classList.add("show-service-card");
 	}
@@ -184,21 +172,14 @@ function roolInFinanse() {
 	if (window.scrollY > 2336) {
 		equipment.classList.add("slide");
 	}
-	if (window.scrollY > 2521) {
+	if (window.scrollY > 2336) {
 		arrangements.classList.add("slide");
-	}
-}
-function rollIN() {
-	const equipment = document.querySelector(".planning__box-equipment");
-	if (window.scrollY > 7949) {
-		equipment.classList.add(".slide");
 	}
 }
 
 window.addEventListener("scroll", addShadow);
 window.addEventListener("scroll", ServiceShowCard);
 window.addEventListener("scroll", roolInFinanse);
-window.addEventListener("scroll", rollIN);
 
 burger.addEventListener("click", burgerMenu);
 icon.addEventListener("click", togglePhonebox);
@@ -247,3 +228,37 @@ function resetInterwal() {
 
 rightBtn.addEventListener("click", hendleRightArrow);
 leftBtn.addEventListener("click", hendleLeftArrow);
+
+function openAccordionItems() {
+	const text = this.nextElementSibling;
+	if (text.classList.contains("activeAcordeon")) {
+		text.classList.remove("activeAcordeon");
+	} else {
+		closeAccordionItem();
+		text.classList.toggle("activeAcordeon");
+	}
+}
+
+function closeAccordionItem() {
+	const allActiveitems = document.querySelectorAll(
+		".arrangements__accordion-box-info"
+	);
+	allActiveitems.forEach(item => {
+		item.classList.remove("activeAcordeon");
+	});
+}
+
+function clickOutSideAccordion(e) {
+	if (
+		e.target.classList.contains("arrangements__accordion-box-btn") ||
+		e.target.classList.contains("arrangements__accordion-box-info") ||
+		e.target.classList.contains("arrangements__accordion-box-info-text")
+	) {
+		return;
+	}
+	closeAccordionItem();
+}
+accordionBtn.forEach(button => {
+	button.addEventListener("click", openAccordionItems);
+});
+window.addEventListener("click", clickOutSideAccordion);

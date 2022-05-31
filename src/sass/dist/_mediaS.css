@@ -1,0 +1,83 @@
+@media (min-width: 375px) {
+  .hamburger--active {
+    transform: translatex(26rem);
+  }
+
+  .hamburger__box {
+    width: 45px;
+    height: 35px;
+    display: inline-block;
+    position: relative;
+  }
+
+  .navigation__list-item {
+    margin: 1rem;
+    padding: 15px 30px;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #e0dfd5;
+    font-weight: 600;
+  }
+
+  .contact__box {
+    right: 35px;
+  }
+
+  .aboudus__box {
+    font-size: 1.6rem;
+  }
+
+  .track__box-text-tittle {
+    font-size: 1.6rem;
+  }
+  .track__box-text-info {
+    font-size: 1.5;
+  }
+
+  .arrangements__boxs-box {
+    height: 35rem;
+  }
+  .arrangements__boxs-box-icon {
+    right: -20px;
+    font-size: 4rem;
+  }
+  .arrangements__boxs-box-card-info {
+    font-size: 1.5rem;
+  }
+  .arrangements__boxs-box-card-list {
+    font-size: 1.4rem;
+  }
+  .arrangements__boxs-box--two {
+    height: 60rem;
+  }
+  .arrangements__boxs-box--three {
+    height: 25rem;
+  }
+
+  .show-card {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .hidden {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  .service__serv {
+    position: relative;
+  }
+  .service__serv-contacts, .service__moder-contacts {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 3rem;
+  }
+}
+@media (min-width: 390px) {
+  .aboudus__box2 {
+    font-size: 1.4rem;
+  }
+  .aboudus__box2-tittle {
+    font-size: 1.7rem;
+  }
+}
