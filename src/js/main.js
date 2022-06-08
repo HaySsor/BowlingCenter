@@ -1,12 +1,8 @@
-const destktopNav = document.querySelector(".nav__desktop");
-const navlist = document.querySelectorAll(".link");
 const burger = document.getElementById("burger");
 const navid = document.getElementById("nav");
 const phone = document.getElementById("phone");
 const icon = document.getElementById("icon");
-const navDesktop = document.querySelectorAll(".nav__desktop .item");
-const quesIcon = document.querySelectorAll(".fa-question-circle");
-const allIcon = document.querySelectorAll(".icon");
+
 const planningBtn = document.querySelector(".icon1");
 const planningPhoto = document.querySelector(
 	".planning__box-planning-info-photo"
@@ -44,6 +40,7 @@ const accordionBtn = document.querySelectorAll(
 );
 // Navigarion List
 const burgerMenu = () => {
+	const navlist = document.querySelectorAll(".link");
 	burger.classList.toggle("hamburger--active");
 	navid.classList.toggle("navigation--active");
 
@@ -68,20 +65,12 @@ document.onclick = function (e) {
 	}
 };
 
-// shawdo nav desktop
-const addShadow = () => {
-	if (window.scrollY >= 100) {
-		destktopNav.classList.add("show-bgc");
-	} else {
-		destktopNav.classList.remove("show-bgc");
-	}
-};
-
 const togglePhonebox = () => {
 	phone.classList.toggle("show");
 };
 
 const showPlaningPhoto = () => {
+	const allIcon = document.querySelectorAll(".icon");
 	allIcon.forEach(item => {
 		item.addEventListener("click", e => {
 			if (e.target.matches(".icon")) {
@@ -136,6 +125,7 @@ const handleCurrentYear = () => {
 handleCurrentYear();
 
 window.onscroll = () => {
+	const navDesktop = document.querySelectorAll(".nav__desktop .item");
 	section.forEach(sec => {
 		let top = window.scrollY;
 		let offset = sec.offsetTop;
@@ -177,7 +167,6 @@ function roolInFinanse() {
 	}
 }
 
-window.addEventListener("scroll", addShadow);
 window.addEventListener("scroll", ServiceShowCard);
 window.addEventListener("scroll", roolInFinanse);
 
