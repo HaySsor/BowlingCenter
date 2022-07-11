@@ -420,12 +420,8 @@ body {
 .track {
 	margin: 1rem;
 	&__box {
-		// margin: 0.5rem;
-
 		border-radius: 20px;
 		background-color: #047aa1;
-		// background: linear-gradient(-45deg, #039acc, #09162e98);
-		// box-shadow: 15px 15px 26px #808080, -15px -15px 26px #eadeda;
 		border: 5px solid rgba(0, 0, 0, 0.448);
 		overflow: hidden;
 		&:nth-child(odd) {
