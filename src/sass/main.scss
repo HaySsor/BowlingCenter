@@ -612,7 +612,8 @@ body {
 		&-equipment {
 			padding: 1.5rem;
 			margin-bottom: 2rem;
-			background: linear-gradient(-45deg, #039acc, #09162e98);
+			background-color: #047aa1;
+			border: 5px solid rgba(0, 0, 0, 0.393);
 			box-shadow: 15px 15px 26px #808080, -15px -15px 26px #eadeda;
 			border-radius: 15px;
 			overflow: hidden;
