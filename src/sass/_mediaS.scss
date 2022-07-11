@@ -3,10 +3,10 @@
 		transform: translatex(26rem);
 	}
 	.hamburger__box {
+		position: relative;
+		display: inline-block;
 		width: 45px;
 		height: 35px;
-		display: inline-block;
-		position: relative;
 	}
 
 	.navigation {
@@ -15,9 +15,9 @@
 				margin: 1rem;
 				padding: 15px 30px;
 				font-size: 1.8rem;
+				font-weight: 600;
 				text-decoration: none;
 				color: #e0dfd5;
-				font-weight: 600;
 			}
 		}
 	}
@@ -83,9 +83,9 @@
 		&__serv,
 		&__moder {
 			&-contacts {
-				font-size: 1.8rem;
-				text-align: center;
 				margin-top: 3rem;
+				text-align: center;
+				font-size: 1.8rem;
 			}
 		}
 	}

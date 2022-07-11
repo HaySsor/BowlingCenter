@@ -14,23 +14,22 @@
 		}
 	}
 	.contact__box {
+		right: 20px;
 		height: 50em;
 		width: 50em;
-		right: 20px;
 
 		&-tittle {
 			margin-bottom: 2em;
-
 			font-size: 3rem;
 		}
 
 		&-phone {
-			font-size: 3rem;
 			margin-bottom: 3em;
+			font-size: 3rem;
 		}
 		&-email {
-			font-size: 3rem;
 			margin-bottom: 1.2em;
+			font-size: 3rem;
 		}
 	}
 }
@@ -43,23 +42,22 @@
 		display: none;
 	}
 	.nav__desktop {
-		border-bottom-left-radius: 15px;
-		border-bottom-right-radius: 15px;
 		position: fixed;
 		display: flex;
-		justify-content: center;
 		align-items: center;
+		justify-content: center;
 		width: 100%;
 		height: 7em;
-		z-index: 1000;
+		background-image: linear-gradient(147deg, #ef271b 0%, #007ea7 80%);
+		border-bottom-left-radius: 15px;
+		border-bottom-right-radius: 15px;
 		transition: background-color 0.7s;
-
-		// background-color: rgb(180, 22, 22);
+		z-index: 1000;
 		&-item {
 			margin: 0.5rem;
-			font-size: 1.2rem;
 			padding: 1.5rem 1.25rem;
 			text-decoration: none;
+			font-size: 1.2rem;
 			color: #ffffff;
 			&:last-child {
 				margin-right: 2em;
@@ -72,15 +70,15 @@
 		}
 	}
 	.logo {
-		font-size: 2rem;
 		margin-right: 0rem;
+		font-size: 2rem;
 		img {
 			width: 15rem;
 		}
 
 		.fa-bowling-ball {
-			color: #f5f0f0;
 			padding: 0.5em;
+			color: #f5f0f0;
 		}
 		.fa-bowling-ball:hover {
 			color: #333;
@@ -94,9 +92,9 @@
 	.header {
 		.hero-text {
 			h1 {
-				font-size: 4rem;
-				text-transform: uppercase;
 				margin-bottom: 0.5em;
+				text-transform: uppercase;
+				font-size: 4rem;
 			}
 			p {
 				font-size: 2.2rem;
@@ -106,8 +104,8 @@
 	// main
 	.section-title {
 		padding-top: 9rem;
-		font-size: 4rem;
 		margin-top: 2rem;
+		font-size: 4rem;
 	}
 	// o nas
 
@@ -171,8 +169,8 @@
 	// home
 	.header {
 		.hero-img {
-			background-position: 100%;
 			height: 100vh;
+			background-position: 100%;
 		}
 	}
 	.arrangements {
@@ -182,26 +180,23 @@
 			flex-direction: row;
 			justify-content: center;
 			align-items: center;
-
 			padding: 1rem;
-
 			&-box {
 				position: relative;
-				width: 48%;
-				height: 40rem;
-
-				border-radius: 15px;
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
-				margin-bottom: 2rem;
 				margin-left: 1.5rem;
+				margin-bottom: 2rem;
+				width: 48%;
+				height: 40rem;
+				border-radius: 15px;
 				transition: height 0.4s;
 				&-card {
 					&-list {
 						padding: 2rem;
-						font-size: 1.3rem;
 						text-align: left;
+						font-size: 1.3rem;
 					}
 				}
 			}
@@ -223,8 +218,8 @@
 
 @media (min-width: 1200px) {
 	.nav__desktop {
-		z-index: 999;
 		background-image: linear-gradient(147deg, #ef271b 0%, #007ea7 80%);
+		z-index: 999;
 		&-item {
 			font-size: 1.5rem;
 		}
@@ -241,8 +236,8 @@
 	}
 	.header {
 		.hero-img {
-			background: none;
 			position: relative;
+			background: none;
 		}
 		.hero-text {
 			margin-left: -60rem;
@@ -259,14 +254,14 @@
 		}
 	}
 	.desktop-photo {
-		display: block;
 		position: absolute;
-		clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
 		top: 0;
 		right: 0;
-		z-index: -10;
+		display: block;
 		width: 60%;
 		height: 100%;
+		clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+		z-index: -10;
 	}
 
 	.aboudus {
@@ -286,18 +281,18 @@
 		&__cardbox {
 			&-card {
 				&-tittle {
-					font-size: 2.2rem;
 					margin-bottom: 0.7em;
+					font-size: 2.2rem;
 				}
 
 				&-text {
-					font-size: 2rem;
 					margin-bottom: 0.7em;
+					font-size: 2rem;
 				}
 
 				.fas {
-					font-size: 2.5rem;
 					margin-bottom: 0.7em;
+					font-size: 2.5rem;
 					transition: transform 1s;
 				}
 				.fas:hover {
@@ -310,27 +305,24 @@
 		}
 
 		&__photobox {
-			width: 100%;
-			height: 15rem;
 			justify-content: center;
 			flex-wrap: wrap;
-
+			width: 100%;
+			height: 15rem;
 			&-photo {
 				display: flex;
-
+				margin: 1em;
 				width: 20%;
 				height: 90%;
-				margin: 1em;
 				border-radius: 40px;
 				border-top-left-radius: 50%;
 				border-bottom-left-radius: 50%;
-
 				img {
+					margin-left: 0;
+					min-width: 12rem;
 					width: 30%;
 					height: 12rem;
 					border-radius: 50%;
-					margin-left: 0;
-					min-width: 12rem;
 					transition: transform 0.4s;
 				}
 				img:hover {
@@ -338,26 +330,24 @@
 				}
 			}
 			&-tittle {
-				text-align: center;
 				display: flex;
+				text-align: center;
 				flex-direction: column;
 				justify-content: center;
-				font-size: 1.2rem;
-				width: 100%;
 				margin: auto;
-
+				width: 100%;
+				font-size: 1.2rem;
 				.name {
-					color: rgb(214, 22, 64);
 					font-size: 2rem;
+					color: rgb(214, 22, 64);
 				}
 			}
 		}
 	}
 	.contact__box {
+		right: 50px;
 		height: 30em;
 		width: 30em;
-		right: 50px;
-
 		&-tittle {
 			margin-bottom: 1em;
 			color: rgb(214, 22, 64);
@@ -365,25 +355,25 @@
 		}
 
 		&-phone {
+			margin-bottom: 1em;
 			padding: 0.5em;
 			font-size: 2rem;
-			margin-bottom: 1em;
 		}
 		&-email {
-			font-size: 2rem;
 			margin-bottom: 1em;
+			font-size: 2rem;
 		}
 	}
 	.contact-button {
+		cursor: pointer;
 		position: fixed;
 		right: 50px;
-		cursor: pointer;
 
 		i {
+			cursor: pointer;
 			position: relative;
 			font-size: 6rem;
 			color: rgb(214, 22, 64);
-			cursor: pointer;
 		}
 	}
 	.show {
@@ -403,11 +393,11 @@
 				}
 				&-link {
 					a {
-						transition: color 0.3s;
-						font-size: 1.2rem;
 						margin: 1.5rem;
 						padding: 5px 10px;
+						font-size: 1.2rem;
 						color: #e0dfd5;
+						transition: color 0.3s;
 					}
 					a:hover {
 						color: #ef271b;
@@ -431,19 +421,18 @@
 			background-repeat: no-repeat;
 			background-size: cover;
 			border-radius: 15px;
-
 			&-box {
 				margin: 3rem;
+				margin-bottom: 2rem;
 				width: 33%;
 				height: 35rem;
-				margin-bottom: 2rem;
 				box-shadow: 15px 15px 26px #050505, -15px -15px 26px #ffffff00;
 				&-icon {
 					position: absolute;
 					top: 5px;
 					right: 5px;
-					font-size: 3rem;
 					pointer-events: none;
+					font-size: 3rem;
 				}
 
 				&-title {
@@ -456,22 +445,22 @@
 					bottom: 0;
 					left: 0;
 					right: 0;
-					padding: 1em;
-					transition: opacity 0.5s, transform 0.5s;
 					display: flex;
 					align-items: center;
 					flex-direction: column;
 					justify-content: center;
+					padding: 1em;
 					transform: scale(0);
+					transition: opacity 0.5s, transform 0.5s;
 
 					&-info {
-						font-size: 1.3rem;
 						margin-bottom: 0.7rem;
+						font-size: 1.3rem;
 					}
 					&-list {
-						font-size: 1.3rem;
-						text-align: left;
 						list-style: none;
+						text-align: left;
+						font-size: 1.3rem;
 					}
 				}
 			}
@@ -494,39 +483,36 @@
 	.planning {
 		padding: 1.5rem;
 		&__box {
-			height: 140rem;
 			position: relative;
+			height: 140rem;
 			&-text {
 				font-size: 2.1rem;
 			}
 
 			&-middle {
 				position: absolute;
-				margin-top: 1rem;
-				margin-bottom: 1rem;
 				top: 50%;
 				left: 50%;
-
+				margin-top: 1rem;
+				margin-bottom: 1rem;
 				z-index: -1;
 				img {
 					top: 50%;
 					left: 50%;
-					transform: translate(-50%, -50%);
 					min-width: 60%;
 					width: 80%;
+					transform: translate(-50%, -50%);
 				}
 			}
-
 			&-finances,
 			&-planning,
 			&-lanes,
 			&-arrangements,
 			&-equipment {
-				overflow: visible;
-				opacity: 0;
 				position: absolute;
+				opacity: 0;
+				overflow: visible;
 			}
-
 			&-finances {
 				top: 17rem;
 				right: 33rem;
@@ -535,7 +521,6 @@
 				&-info {
 					position: relative;
 					justify-content: center;
-
 					&-text {
 						font-size: 1.4rem;
 					}
@@ -547,7 +532,6 @@
 					}
 				}
 			}
-
 			&-planning {
 				top: 30rem;
 				left: 2rem;
@@ -555,7 +539,6 @@
 				width: 30%;
 				&-info {
 					position: relative;
-
 					&-text {
 						font-size: 1.4rem;
 					}
@@ -573,16 +556,13 @@
 				right: -1rem;
 				height: 25rem;
 				width: 30%;
-
 				&-info {
 					position: relative;
 					justify-content: center;
 					z-index: 2;
-
 					&-text {
 						font-size: 1.4rem;
 						z-index: 5;
-
 						a {
 							z-index: 5;
 						}
@@ -595,18 +575,15 @@
 					}
 				}
 			}
-
 			&-arrangements {
 				bottom: 17em;
 				right: 20rem;
 				height: 25rem;
 				width: 30%;
-
 				&-info {
 					position: relative;
 					justify-content: center;
 					z-index: 2;
-
 					&-text {
 						font-size: 1.4rem;
 					}
@@ -618,17 +595,14 @@
 					}
 				}
 			}
-
 			&-equipment {
 				bottom: 25rem;
 				left: 0rem;
 				height: 25rem;
 				width: 30%;
-
 				&-info {
 					position: relative;
 					justify-content: center;
-
 					&-text {
 						font-size: 1.4rem;
 					}
@@ -642,8 +616,8 @@
 			}
 		}
 		.pdf {
-			font-size: 2rem;
 			text-align: center;
+			font-size: 2rem;
 			color: #ec0b43;
 		}
 		.planning__box-download {
@@ -658,40 +632,34 @@
 		margin-bottom: -1rem;
 		width: 100%;
 	}
-
 	.galleryPhoto {
 		padding: 1.5rem;
 		margin-top: 0;
 		height: 100%;
 		background-color: #485461;
 		background-image: linear-gradient(340deg, #a7bbd1 15%, #28313b 74%);
-		// border-radius: 15px;
-
 		.section-title-gallery {
 			color: #ef271b;
 		}
-
 		&__btn-box {
 			&-button {
 				display: none;
 			}
 		}
-
 		&__box {
 			position: relative;
 			display: grid;
 			grid-template-columns: 2fr 1fr 2fr;
-
 			gap: 1rem;
 			&-item {
 				position: relative;
-				width: 100%;
 				top: 0;
 				left: 0;
 				right: 0;
-				height: 300px;
-				border-radius: 15px;
 				margin-bottom: 1rem;
+				height: 300px;
+				width: 100%;
+				border-radius: 15px;
 				transition: transform 0.4s;
 			}
 			.show-photo1 {
@@ -713,9 +681,9 @@
 					font-size: 5rem;
 				}
 				.ball-top {
-					display: block;
 					top: 9rem;
 					left: 4rem;
+					display: block;
 					animation: rotateleft 25s infinite;
 				}
 			}
@@ -731,7 +699,6 @@
 		animation: show 1.5s forwards;
 	}
 }
-
 @media (min-width: 1361px) {
 	.nav__desktop {
 		justify-content: center;
@@ -739,14 +706,12 @@
 	.logo {
 		left: 3em;
 	}
-
 	// main
 	.section-title {
+		margin-top: 4rem;
 		padding-top: 8rem;
 		font-size: 4rem;
-		margin-top: 4rem;
 	}
-
 	.header {
 		.hero-text {
 			margin-left: -70rem;
@@ -754,7 +719,6 @@
 				font-size: 2rem;
 			}
 		}
-
 		.aboudus {
 			&__box {
 				font-size: 2.5rem;
@@ -764,22 +728,19 @@
 					font-size: 2rem;
 				}
 			}
-
 			&__cardbox {
 				&-card {
 					&-tittle {
-						font-size: 2rem;
 						margin-bottom: 0.7em;
+						font-size: 2rem;
 					}
-
 					&-text {
+						margin-bottom: 0.7em;
 						font-size: 1.3rem;
-						margin-bottom: 0.7em;
 					}
-
 					.fas {
-						font-size: 2rem;
 						margin-bottom: 0.7em;
+						font-size: 2rem;
 					}
 				}
 			}
@@ -789,40 +750,37 @@
 @media (min-width: 1847px) {
 	.contact-button {
 		position: fixed;
-		bottom: 10px;
 		left: 85%;
+		bottom: 10px;
 	}
 	.contact__box {
 		position: fixed;
 		bottom: 40px;
 		left: 73%;
-
 		height: 30em;
 		width: 30em;
 	}
 	.planning {
 		padding: 1.5rem;
 		&__box {
-			height: 140rem;
 			position: relative;
+			height: 140rem;
 			&-text {
 				font-size: 2.1rem;
 			}
-
 			&-middle {
 				position: absolute;
-				margin-top: 1rem;
-				margin-bottom: 1rem;
 				top: 50%;
 				left: 50%;
-
+				margin-top: 1rem;
+				margin-bottom: 1rem;
 				z-index: -1;
 				img {
 					top: 50%;
 					left: 50%;
-					transform: translate(-50%, -50%);
 					min-width: 60%;
 					width: 80%;
+					transform: translate(-50%, -50%);
 				}
 			}
 			&-finances,
@@ -837,27 +795,27 @@
 						font-size: 1.4rem;
 					}
 					&-photo {
-						display: block;
-						opacity: 0;
 						position: absolute;
-						width: 100%;
-						height: 22rem;
-						z-index: -10;
 						top: 0;
 						left: 0;
 						bottom: 0;
 						right: 0;
+						display: block;
+						width: 100%;
+						height: 22rem;
 						transform: translateX(0) scale(0);
 						transition: transform 0.4s, opacity 0.6s;
+						opacity: 0;
+						z-index: -10;
 					}
 					.fa-arrow-right {
-						display: block;
-						position: absolute;
-						font-size: 2rem;
-						transition: transform 0.3s;
-						padding: 1.5rem;
 						cursor: pointer;
+						position: absolute;
+						display: block;
+						padding: 1.5rem;
+						font-size: 2rem;
 						color: #ef271b;
+						transition: transform 0.3s;
 					}
 				}
 			}
@@ -874,15 +832,15 @@
 			&-planning {
 				&-info {
 					.fa-arrow-down {
+						cursor: pointer;
+						position: absolute;
 						left: 0;
 						bottom: 0;
 						display: block;
-						position: absolute;
-						font-size: 2rem;
-						transition: transform 0.3s;
 						padding: 1.5rem;
-						cursor: pointer;
+						font-size: 2rem;
 						color: #ef271b;
+						transition: transform 0.3s;
 					}
 				}
 			}
@@ -891,15 +849,15 @@
 				right: -10rem;
 				&-info {
 					.fa-arrow-down {
+						cursor: pointer;
+						position: absolute;
 						right: 0;
 						bottom: -1rem;
 						display: block;
-						position: absolute;
-						font-size: 2rem;
-						transition: transform 0.3s;
 						padding: 1.5rem;
-						cursor: pointer;
+						font-size: 2rem;
 						color: #ef271b;
+						transition: transform 0.3s;
 					}
 				}
 			}
@@ -916,15 +874,15 @@
 			&-equipment {
 				&-info {
 					.fa-arrow-down {
+						cursor: pointer;
+						position: absolute;
 						left: 0;
 						bottom: -1.5rem;
 						display: block;
-						position: absolute;
-						font-size: 2rem;
-						transition: transform 0.3s;
 						padding: 1.5rem;
-						cursor: pointer;
+						font-size: 2rem;
 						color: #ef271b;
+						transition: transform 0.3s;
 					}
 				}
 			}
@@ -943,7 +901,6 @@
 	.arrow-rotate {
 		transform: rotate(180deg);
 	}
-
 	.show-photo1 {
 		opacity: 1;
 		transform: translateY(280px) translateX(-100px) scale(1);
@@ -955,7 +912,6 @@
 	}
 	.show-photo3 {
 		opacity: 1;
-
 		transform: translate(120px, 320px) scale(1);
 	}
 	.show-photo4 {
@@ -973,16 +929,13 @@
 		width: 100%;
 	}
 }
-
 @keyframes rotateleft {
 	0% {
 		transform: translateX(0) rotate(0);
 	}
-
 	50% {
 		transform: translateX(1100px) rotate(1200deg);
 	}
-
 	100% {
 		transform: translateX(0) rotate(0);
 	}
@@ -997,12 +950,10 @@
 		transform: scale(1);
 	}
 }
-
 .scrollSpy {
 	border-radius: 15px;
 	box-shadow: 0 0 5px rgb(0, 0, 0);
 }
-
 .slide {
 	opacity: 1;
 	animation: animation.$slide 0.6s ease-out both;
