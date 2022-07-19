@@ -262,6 +262,12 @@
 		height: 100%;
 		clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
 		z-index: -10;
+		transform: translateX(1000px);
+		transition: transform 1s;
+		object-fit: cover;
+	}
+	.desktop-photo-active{
+		transform: translateX(0);
 	}
 
 	.aboudus {
@@ -406,77 +412,14 @@
 			}
 		}
 	}
-
 	.arrangements {
-		padding: 1.5rem;
-		&__boxs {
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-			flex-wrap: wrap;
-			align-items: center;
-			justify-content: center;
-			padding: 1rem;
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: cover;
-			border-radius: 15px;
+		&__accordion {
 			&-box {
-				margin: 3rem;
-				margin-bottom: 2rem;
-				width: 33%;
-				height: 35rem;
-				box-shadow: 15px 15px 26px #050505, -15px -15px 26px #ffffff00;
-				&-icon {
-					position: absolute;
-					top: 5px;
-					right: 5px;
-					pointer-events: none;
-					font-size: 3rem;
-				}
-
-				&-title {
-					opacity: 1;
-					transition: opacity 0.5s, transform 0.5s;
-				}
-				&-card {
-					position: absolute;
-					top: 0;
-					bottom: 0;
-					left: 0;
-					right: 0;
-					display: flex;
-					align-items: center;
-					flex-direction: column;
-					justify-content: center;
-					padding: 1em;
-					transform: scale(0);
-					transition: opacity 0.5s, transform 0.5s;
-
-					&-info {
-						margin-bottom: 0.7rem;
-						font-size: 1.3rem;
-					}
-					&-list {
-						list-style: none;
-						text-align: left;
-						font-size: 1.3rem;
+				&-info {
+					&-text {
+						font-size: 1.5rem;
 					}
 				}
-			}
-
-			&-box--move:hover .arrangements__boxs-box-card {
-				opacity: 1;
-				transform: scale(1);
-			}
-
-			&-box--move:hover .arrangements__boxs-box-title {
-				opacity: 0;
-				transform: scale(0);
-			}
-
-			&-box--two:hover {
-				height: 50rem;
 			}
 		}
 	}
@@ -672,7 +615,7 @@
 		}
 	}
 	.service {
-		margin-top: -2rem;
+		margin-top: -10rem;
 		font-size: 1.4rem;
 		&__serv,
 		&__moder {
